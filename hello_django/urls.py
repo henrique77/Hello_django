@@ -19,6 +19,7 @@ from core import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('hello/<nome>/', views.hello)
-    #Qauldo alguem acessar a url 'hello/' redireciona para views.hello
+    path('hello/<nome>/', views.hello), #Qauldo alguem acessar a url 'hello/' redireciona para views.hello
+    path('operacao/<int:num1>/<operacao>/<int:num2>/', views.operacoes)
+
 ]
